@@ -1,6 +1,6 @@
 # springboot-jpa-aws
 스프링부트와 jpa로 구현한 웹서비스를 aws를 사용해 배포해본다
-#필기
+# 필기
 ## entitiy annotation
 * 클래스에 붙이며 테이블과 링크될 클래스임을 나타낸다.
 * 카멜케이스이름이 db에는 언더바로 매칭된다 ex) newTable.java -> create table new_table
