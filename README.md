@@ -1,7 +1,13 @@
 # springboot-jpa-aws
 스프링부트와 jpa로 구현한 웹서비스를 aws를 사용해 배포해본다
 # 필기
-## entitiy annotation
+## Test
+* class annotation
+    * @RunWith(SpringRunner.class)//테스트Runner
+    * @SpringBootTest//이게 있으면 자동으로 h2db를 연동해서 실행해줌
+* method annotation
+    * @After//테스트 이후에 처리할 사항. 테스트에 사용한 데이터가 그대로 남아 서비스에 영향을 주지 않도록 함
+## @Entity
 * 클래스에 붙이며 테이블과 링크될 클래스임을 나타낸다.
 * 카멜케이스이름이 db에는 언더바로 매칭된다 ex) newTable.java -> create table new_table
 * 필드가 컬럼이 되며 id,column어노테이션등을 추가해 추가될 컬럼에 제약조건을 넣을 수 있다.
