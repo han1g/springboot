@@ -33,3 +33,14 @@
     * findAll()-> 모든 데이터 리스팅
 * entity클래스와 기본 repository인터페이스는 같은 위치에 있어야함
 * 
+## JPA 서비스 계층 구조
+* Web Layer
+   * 컨트롤러,필터,인터셉터
+* Service Layer
+   * 트랜잭션처리와 도메인의 실행순서 보장 
+* Repository Layer
+   * 데이터베이스에 접근하는 객체
+* Dtos
+   * 계층간 데이터 교환을 위한 객체 ex)뷰 템플릿 객체, 데이터베이스 쿼리 결과 객체
+* Domain Model
+   * 비즈니스 로직과 데이터 모델링을 담당
