@@ -21,3 +21,9 @@
     .b(b)
     .build();//어느 필드에 뭐가 들어가는지 명확함
 ```
+## Repository
+* jpa에서 DAO역할을 하는 것. JPARepository<Entity,PK_CLASSTYPE>를 상속하면 알아서 crud 메소드가 등록됨  
+    *save(extends Entity s) -> s를 update 하거나 insert함 id가있으면 update,없으면 insert
+    *findAll()-> 모든 데이터 리스팅
+* entity클래스와 기본 repository인터페이스는 같은 위치에 있어야함
+* 
